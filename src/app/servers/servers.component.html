@@ -6,11 +6,12 @@
   class="form-control"
   (input)="onUpdateServerName($event)"> <!--here we are passing the input to the function-->
 
-<!--Input (as an event) to capture the server name-->
+<!--Input Two way binding-->
 <input
   type="text"
   class="form-control"
-  (input)="onUpdateServerName($event)"> <!--here we are passing the input to the function-->
+  [(ngModel)]="serverName">
+
 
 <p>{{ serverName }}</p>
 <button
