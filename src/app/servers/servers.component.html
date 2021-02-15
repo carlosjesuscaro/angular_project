@@ -1,4 +1,4 @@
-<label>Server Name label from App Servers component</label>
+<label class="alert-danger">Server Name label from App Servers component</label>
 
 <!--Input Two way binding-->
 <input
@@ -17,12 +17,13 @@
 
 <p> {{ serverCreationStatus }}</p>
 
+<p [ngStyle]="{'background-color': getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}"> {{ serverStatus }}</p>
+
 <p *ngIf="isText; else Naranjas">ABraXas CAMPEON!</p>
 <ng-template #Naranjas>
   <p>There is no text here!!!!</p>
 </ng-template>>
-
-
 
 <!--Calling the App-server component-->
 <app-server></app-server>
