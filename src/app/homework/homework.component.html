@@ -1,0 +1,43 @@
+<h1>homework works!</h1>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>Add an input field which updates a property ('username') via TwoWayBiding</li>
+        <li>Output the username property via string interpolation (in a paragraph) below the input</li>
+        <li>Add a button which may only be clicked if the username is NOT empty</li>
+        <li>Upon clicking the button, the username should be reset to an empty string</li>
+      </ol>
+      <hr>
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>{{ username }}</p>
+      <button class="btn btn-primary"
+        [disabled]="username === ''"
+      (click)="username = ''">Reset username</button>
+
+    </div>
+  </div>
+</div>
+
+<!--<ol>
+  <li>
+    &lt;!&ndash;Input Two way binding&ndash;&gt;
+    <hr>
+    <input
+      type="text"
+      class="form-control"
+      [(ngModel)]="inputField">
+  </li>
+  <li>
+    <p>{{ inputField }}</p>
+  </li>
+  <li>
+    <button type="button"
+            class="btn btn-success"
+            [disabled] = "!isEmpty"
+            (click)="testFunction()">
+      Button</button>
+  </li>
+</ol>-->

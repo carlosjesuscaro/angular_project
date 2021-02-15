@@ -25,6 +25,6 @@ export class ServersComponent implements OnInit {
   /* Function to update the status of serverCreationStatus */
   // tslint:disable-next-line:typedef
   onCreateServer(){
-    this.serverCreationStatus = 'Server was created!';
+    this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
 }
