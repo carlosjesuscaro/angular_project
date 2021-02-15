@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class ServersComponent implements OnInit {
   allowNewServer = false;
+  isText = false;
   serverCreationStatus = 'No server was created!';
   serverName = 'No name for now';
 
@@ -26,5 +27,6 @@ export class ServersComponent implements OnInit {
   // tslint:disable-next-line:typedef
   onCreateServer(){
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
+    this.isText = true;
   }
 }
