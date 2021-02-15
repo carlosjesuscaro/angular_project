@@ -1,19 +1,12 @@
 <label>Server Name label from App Servers component</label>
 
-<!--Input (as an event) to capture the server name-->
-<input
-  type="text"
-  class="form-control"
-  (input)="onUpdateServerName($event)"> <!--here we are passing the input to the function-->
-
 <!--Input Two way binding-->
 <input
   type="text"
   class="form-control"
   [(ngModel)]="serverName">
-
-
 <p>{{ serverName }}</p>
+
 <button
         class="btn btn-primary"
         [disabled]="!allowNewServer"

@@ -27,10 +27,4 @@ export class ServersComponent implements OnInit {
   onCreateServer(){
     this.serverCreationStatus = 'Server was created!';
   }
-
-  /*Function to capture the server name from an input*/
-  // tslint:disable-next-line:typedef
-  onUpdateServerName(event: any){
-    this.serverName = event.target.value;
-  }
 }
