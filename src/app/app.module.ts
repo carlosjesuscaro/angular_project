@@ -11,6 +11,7 @@ import { TestComponentComponent } from './test-component/test-component.componen
 import { WarningAlertComponent } from './warning-alert/warning-alert.component';
 import { SuccesAlertComponent } from './succes-alert/succes-alert.component';
 import { HomeworkComponent } from './homework/homework.component';
+import { Homew2Component } from './homew2/homew2.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HomeworkComponent } from './homework/homework.component';
     TestComponentComponent,
     WarningAlertComponent,
     SuccesAlertComponent,
-    HomeworkComponent
+    HomeworkComponent,
+    Homew2Component
   ],
   imports: [
     BrowserModule,

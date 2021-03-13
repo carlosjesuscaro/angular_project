@@ -1,0 +1,22 @@
+<p>homew2 works!</p>
+
+<ol>
+  <li>Add a button which says 'Display Details'</li>
+  <li>Add a paragraph with any content</li>
+  <li>Toggle the displaying of the paragraph with the button created</li>
+  <li>Log all button clicks ina n array and out put the array below the secret paragraph (number and time)</li>
+  <li>After the 5th, all future log items should have a blue background</li>
+</ol>
+
+<div class="container">
+  <div class="col-xxl-12">
+    <!--<button (click)="showParagraph = !showParagraph">Display details</button>-->
+    <button (click)="onToggle()">Display details</button>
+    <p *ngIf="showParagraph">This is only a paragraph example</p>
+    <div *ngFor="let logItem of log; let i = index"
+         [ngStyle]="{backgroundColor: logItem >= 5? 'blue': 'transparent'}"
+         [ngClass]="{'white-text': logItem >=5}">
+    {{ logItem }}
+    </div>
+   </div>
+</div>
